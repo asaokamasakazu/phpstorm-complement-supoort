@@ -15,4 +15,16 @@
     <applicationListeners>
         <listener class="com.github.asaokamasakazu.phpstormcomplementsupoort.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+
+    <actions>
+        <action id="com.github.asaokamasakazu.phpstormcomplementsupoort.JumpFile"
+                class="com.github.asaokamasakazu.phpstormcomplementsupoort.JumpFile"
+                text="Jump File"
+                description="Jump File"
+                icon="AllIcons.Actions.MoveTo2"
+        >
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt J"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
